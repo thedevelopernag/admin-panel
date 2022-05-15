@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        table{
+            background-color: white;
+        }
+
+        table th{
+            color: #68727b; 
+            font-weight: normal;
+            font-size: 14px;
+        }
+        table thead th{
+            color: #68727b;
+            font-weight: bold;
+        }
+
+        table td{
+            color: #68727b;
+            font-size: 14px !important;
+        }
+
+        body{
+            background-color: #f2f8f8;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="dashboard">
+        <aside class="sidebar">
+            <div class="logo"><img src="logo.jpeg"></i> <span>TechSnap</span></div>
+            <ul>
+                <a href="index.html"><li title="Dashboard"><i class="fa fa-home" ></i> <span>Dashboard</span></li></a>   
+                  <a href="add_question.html"><li title="Add Questions"><i class="fa fa-question"></i> <span>Add Questions</span></li> </a>             
+                  <a href="view_question.html"><li title="View Questions"><i class="fa fa-question"></i> <span>View Questions</span></li></a>              
+                <a href="view_student_results.html"><li title="View Student Reasult"><i class="fa fa-chart-line"></i> <span>View Student Reasult</span></li></a>
+                <a href="view_students.html"><li  title="View Students"><i class="fa fa-users"></i> <span>View Students</span></li></a>
+
+            </ul>
+            <span class="cut">&times;</span>
+        </aside>
+        <main>
+            <div class="header">
+                <i class="fa fa-bars" onclick="togside()"></i>
+                <div class="logout_part">
+                    <i class="fa fa-expand-alt" style="color: white;"> <span>Admin</span></i>
+                    <i class="fas fa-sign-out-alt" style="color: white; margin-left: 10px;"> <span>Logout</span></i>
+                </div>
+            </div>
+
+            <div class=" container mt-5">
+                <div class="my-3 Question_head"><i class="fas fa-clock"></i><span class=" mx-2 font-weight-bold">Test Duration (mins)</span><i class="fa fa-info"></i><span class="mx-2">45</span><i class="fa fa-edit"></i></div>
+                
+                <div class="table-responsive-xl">
+                <table class="table border   px-5" style="box-shadow:0px 2px 3px 0px rgba(0,0,0,0.3) ;">
+                    <thead class="mx-5">
+                      <tr>
+                        <th scope="col">QUESTIONS(7)</th>
+                        <th scope="col">TYPE</th>
+                        <th scope="col">TIME</th>
+                        <th scope="col">SKILLS</th>
+                        <th scope="col" class="text-right">SCORE(80)</th>
+                        <th scope="col"class="text-right">ACTIONS</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Question will come here</th>
+                        <td>Question type</td>
+                        <td>19 mins</td>
+                        <td>html</td>
+                        <td class="text-right">5</td>
+                        <td class="text-right"><i class="fa fa-ellipsis-v"></i></td>
+        
+                      </tr>
+                      <tr>
+                        <th scope="row">Question will come here</th>
+                        <td>Question type</td>
+                        <td>19 mins</td>
+                        <td>javascript</td>
+                        <td class="text-right">5</td>
+                        <td class="text-right"><i class="fa fa-ellipsis-v"></i></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Question will come here</th>
+                        <td>Question type</td>
+                        <td>19 mins</td>
+                        <td>CSS</td>
+                        <td class="text-right">5</td>
+                        <td class="text-right"><i class="fa fa-ellipsis-v"></i></td>
+                      </tr>
+        
+                      <tr>
+                        <th scope="row">Question will come here</th>
+                        <td>Question type</td>
+                        <td>19 mins</td>
+                        <td>CSS</td>
+                        <td class="text-right">5</td>
+                        <td class="text-right"><i class="fa fa-ellipsis-v"></i></td>
+                      </tr>
+        
+                      <tr>
+                        <th scope="row">Question will come here</th>
+                        <td>Question type</td>
+                        <td>19 mins</td>
+                        <td>CSS</td>
+                        <td class="text-right">5</td>
+                        <td class="text-right"><i class="fa fa-ellipsis-v"></i></td>
+                      </tr>
+        
+                      <tr>
+                        <th scope="row">Question will come here</th>
+                        <td>Question type</td>
+                        <td>19 mins</td>
+                        <td>CSS</td>
+                        <td class="text-right">5</td>
+                        <td class="text-right"><i class="fa fa-ellipsis-v"></i></td>
+                      </tr>
+        
+                      <tr>
+                        <th scope="row">Question will come here</th>
+                        <td>Question type</td>
+                        <td>19 mins</td>
+                        <td>CSS</td>
+                        <td class="text-right">5</td>
+                        <td class="text-right"><i class="fa fa-ellipsis-v"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="main.js">
+
+    </script>
+</body>
+
+</html>
